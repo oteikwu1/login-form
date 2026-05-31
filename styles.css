@@ -64,7 +64,7 @@ body{
 input[type="text"]{
     padding: .6em .6em;
     border-radius: var(--input-radius);
-    border: 2px solid var(--text-color);
+    border: 1px solid var(--text-color);
     font-size: 1em;
     width: 100%; 
     margin: .4em 0 1em ;
@@ -80,7 +80,7 @@ input[type="text"]:focus{
 input[type="email"] {
     padding: .6em .6em;
     border-radius: var(--input-radius);
-    border: 2px solid var(--text-color);
+    border: 1px solid var(--text-color);
     font-size: 1em;
     width: 100%;
     margin: .4em 0 1em;
@@ -105,7 +105,7 @@ input[type="email"]:focus {
 input[type="password"] {
     padding: .6em .6em;
     border-radius: var(--input-radius);
-    border: 2px solid var(--text-color);
+    border: 1px solid var(--text-color);
     font-size: 1em;
     width: 100%;
     margin: .4em 0 1em;
@@ -116,6 +116,18 @@ input[type="password"]:focus {
     outline: none;
     border-color: var(--btn-color);
     background-color: transparent;
+}
+
+.eye-open,
+.eye-open-repeat{
+    position: absolute;
+    right: 10px; 
+    top: 30%;
+}
+
+.pass-container,
+.repeat-pass-container{
+    position: relative;
 }
 
 .pass-label {

@@ -14,40 +14,48 @@
     <form action="" method="post" id="login-form">
       
       
-        <label for="name" class="name-label">
+        <label for="name-input" class="name-label">
             Names
         </label>
         <div class="name-container">
-            <input type="text" id="name" 
+            <input type="text" id="name-input" 
             placeholder="John Doe" required>
         </div>
 
-        <label for="email" class="email-label">
+        <label for="email-input" class="email-label">
             Email
         </label>
         <div class="name-container">
-            <input type="email" id="email" 
+            <input type="email" id="email-input" 
             placeholder="john@gmail.com">
         </div>
 
-        <label for="pass" class="pass-label">
+        <label for="pass-input" class="pass-label">
             Password
         </label>
-        <div class="name-container">
-            <input type="password" id="pass" 
+        <div class="pass-container">
+            <div>
+            <input type="password" id="pass-input" 
             placeholder="Create password" required>
+            <img src="assest/eye-open.png" 
+            alt="" width="20" class="eye-open">
+            </div>
         </div>
 
-        <label for="pass" class="repeat-pass-label">
+        <label for="repeat-pass" class="repeat-pass-label">
             Repeat Password
         </label>
-        <div class="name-container">
-            <input type="password" id="pass" 
+
+        <div class="repeat-pass-container">
+            <input type="password" id="repeat-pass" 
             placeholder="Repeat Password">
+            
+        <img src="assest/eye-open.png" alt="" 
+        width="20" class="eye-open-repeat">
         </div>
 
         <div class="check-container">
-        <input type="checkbox"> <span class="checkbox-text">
+        <input type="checkbox" id="checkbox"> <span class="checkbox-text">
             By creating your account you have
             the <a href="#">terms of use</a> and 
             our <br> <a href="#">privacy policy</a>
@@ -55,9 +63,11 @@
         </div>
 
         <div class="btn-container">
-            <button>Sign Up</button>
+            <button id="sign-up-btn">Sign Up</button>
         </div>
     </div>
     </form>
+
+    <script src="script.js"></script>
 </body>
 </html>
